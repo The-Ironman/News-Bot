@@ -1,0 +1,131 @@
+import time
+
+print(''';)
+Hello, Me Is News bot, 
+Me Tell News, Me Reliable''')
+time.sleep(2)
+
+
+def backToTop():
+	choice = input(
+	    'To Hear Whats The Breaking News Type (breaking). To Hear Other Options Type (other).'
+	)
+	print('')
+
+	if choice == 'breaking':
+		#breaking
+		print(
+		    'BREAKING NEWS: Dog catches ball after multiple trys at park. The people rejoice.'
+		)
+		print('')
+		time.sleep(2)
+		print(backToTop())
+
+	elif choice == 'other':
+
+		def other123():
+			choice2 = input('''Other Options:
+    1. tell me a joke
+    2. sports
+    3. news 1
+    4. news 2
+    5. news 3
+    6. news 4
+    7. opinion
+    8. entertaiment
+    9. movies
+    10. sausage
+      ''')
+
+			#joke(1)
+			if choice2 == '1' or choice2 == 'tell me a joke':
+				print('I hate Russian dolls, they are so full of themselves!')
+				laugh = 'ha ' * 10
+				print(laugh)
+				print('')
+				time.sleep(2)
+				backToTop()
+
+			#sports(2)
+			if choice2 == '2' or choice2 == 'sports':
+				print(
+				    'Sports scientist proves darts is not real sport. Outrage sparks in drunk community.'
+				)
+				print('')
+				time.sleep(2)
+				backToTop()
+
+			#news 1(3)
+			if choice2 == '3' or choice2 == 'news 1':
+				print(
+				    'Man calculates the risk involved in using the bush in the parking lot rather than waiting in long bathroom line.'
+				)
+				print('')
+				time.sleep(2)
+				backToTop()
+
+			#news 2(4)
+			if choice2 == '4' or choice2 == 'news 2':
+				print(
+				    'Dog that peed at top of mountain claims crown to emperor of all dogs forever and ever in all galaxys and multiverses. ALL HAIL MR. WHISKERS!!!!'
+				)
+				print('')
+				time.sleep(2)
+				backToTop()
+
+			#news 3(5)
+			if choice2 == '5' or choice2 == 'news 3':
+				print(
+				    'A hovering protest in New York claims we hurt ground by walking.'
+				)
+				print('')
+				time.sleep(2)
+				backToTop()
+
+			#news 4(6)
+			if choice2 == '6' or choice2 == 'news 4':
+				print(
+				    'New prison documentary will be released in March called "The Cosby Show". Their will be no connection to Bill Cosby himself.'
+				)
+				print('')
+				time.sleep(2)
+				backToTop()
+				
+			#opinion(7)
+			if choice2 == '7' or choice2 == 'opinion':
+			  print('time takes a clear and unacceptable stance on religion. We need the seperation of church and calander year.')
+			  print('')
+			  time.sleep(2)
+			  backToTop()
+			
+			#entertainment(8)
+			if choice2 == '8' or choice2 == 'entertainment':
+			  print('Students at MIT have proven that Star Trek is better than Star Wars. The controversial discovery lead to the attempted assasination of four of the students, luckily the sniper suffered from stormtropper syndrom. One of the victims admitted that wearing a red turtle neck uniform in public may have been a mistake.')
+			  print('')
+			  time.sleep(2)
+			  backToTop()
+			
+			#movies(9)
+			if choice2 == '9' or choice2 == 'movies':
+			  print('The movie Cats is bad but peer pressure forces you to smile politely in order to look smart and cultured.')
+			  print('')
+			  time.sleep(2)
+			  backToTop()
+			
+			#sausage(10)
+			if choice2 == '10' or choice2 == 'sausage':
+			  print('October 11 is National Sausage Pizza Day, not to be confused with September 11 which is a totally different day also containing solemn rememberance.')
+			  print('')
+			  time.sleep(2)
+			  backToTop()
+
+			else:
+				backToTop()
+
+		other123()
+
+	else:
+		backToTop()
+
+
+backToTop()
